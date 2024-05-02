@@ -12,6 +12,6 @@ class Config():
 	FLASK_APP = os.getenv('FLASK_APP')
 	FLASK_ENV = os.getenv('FLASK_ENV')
 	SECRET_KEY = os.environ.get('HE_KILLED_MY_WIIIFE') or "Xochi"
-	SQLALACHEMY_DATABASE_URI = os.environ.get('DATABASE_URI') or 'sqlite:///' + os.path.join(basedir, 'app.db')
-	SQLALACHEMY_TRACK_NOTIFICATIONS = False
+	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI') or 'sqlite:///' + os.path.join(basedir, 'app.db')
+	SQLALCHEMY_TRACK_NOTIFICATIONS = False
 
